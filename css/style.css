@@ -1,31 +1,177 @@
-body{
-    font: 24px Ariel, sans-serif;
-    background-color: rgb(48, 44, 44);
-    margin: 1.5%;
-}
-.navbar{
-    background-color: #FF00FF;
-}
+@charset "UTF-8";
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+    }
 
-.quem-somos{
-    background-color: #BF00FF;
-    color: black;
-}
+    .navbar{
+        background-color:  #568259;
+        
+    }
 
-.margin{
-    padding: 3.5%;
-}
+    a{
+        color: #D2C806;
+        font-size: 20px;
+    }
+    a:hover{
+        color: #6B2737;
+    }
 
-.parceiros{
-    background-color: #5F04B4;
-    color: white;
-}
- 
-.servicos{
-    color: white;
-}
+    h1{
+        font-size: 65px;
+        margin-top: 25px;
+        margin-bottom: 250px;
+        font-weight: 900;
+    }
 
-.bg-footer{
-    color: white;
-    background-color: black;
-}
+    h2{
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    h3{
+        margin: 10px;
+        font-family: 650;
+    }
+    p{
+        padding: 40px;
+        font-weight: 500;
+    }
+    .home{
+        height: 100vh;
+        color: white;
+        overflow: hidden;
+        padding: 20px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.7);
+        
+    }
+
+    .home::before{
+        content: "";
+        inset: 0;
+        height: 100vh;
+        position: absolute;
+        background-image: url(../img/ti2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        z-index: -1;
+
+    }
+
+    #quemsomos{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+    
+    #div_quemsomos{
+        color: black;
+        padding-top: 150px;
+        height: 100vh;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.55);
+
+    }
+
+    #div_quemsomos::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        height: 100vh;
+        background-image: url(../img/ti8.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+        background-attachment: scroll;
+        z-index: -1;
+
+    }
+
+    #quemsomos_img{
+        padding-top: 150px;
+        background-color: #568259;
+        width: 50%;
+        display: block;
+        height: 100vh;
+    }
+
+    #servicos{
+        height: 100vh;
+        background-color: #6290C3;
+        overflow: hidden;
+
+    }
+    .servicos{
+        padding: 40px;
+        color: black;
+        height: 100vh;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+
+    }
+    #img_servicos{
+        display: flex;
+        content: "";
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.8;
+        
+    }
+
+    #parceiros{
+        padding: 100px 40px 40px 40px ; 
+        height: 100vh;
+        background-color: #568259;
+
+    }
+
+    button{
+        border: none;
+        color: #D2C806;
+        background-color: #6B2737;
+        padding: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 30px;
+    }
+
+    button:hover{
+        background-color: #D2C806;
+        color: #6B2737;
+    }
+
+    #butao_parceiro{
+        margin-top: 80px;
+    }
+
+    #p_parceiros{
+        margin-top: 20px;
+    }
+
+    .bg-footer{
+        padding-top: 10px;
+        height: 6vh;
+        color: white;
+        background-color: black;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    #p_footer{
+        padding: 0px;
+    }
